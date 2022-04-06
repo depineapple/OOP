@@ -32,6 +32,14 @@ namespace ConsoleApp1
             this.minSpeed = minSpeed;
             this.maxSpeed = maxSpeed;
         }
+        public override void MoveStart()
+        {
+            Console.WriteLine(VehicleName + " начал движение");
+        }
+        public override void MoveStop()
+        {
+            Console.WriteLine(VehicleName + " закончил движение");
+        }
         public override void MoveForward()
         {
             setCurrentSpeed(CurrentSpeed, minSpeed, maxSpeed);

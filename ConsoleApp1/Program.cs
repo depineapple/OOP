@@ -8,9 +8,12 @@ foreach (IFlyable flyable in flyables)
     flyable.TakeOff();
 
 foreach (IMovable movable in movables)
+{
+    movable.MoveStart();
     movable.MoveForward();
+}
 
 planeBoeing7779.Land();
 
 foreach (IMovable movable in movables)
-    movable.MoveBackward();
+    movable.MoveStop();

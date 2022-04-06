@@ -11,6 +11,8 @@ namespace ConsoleApp1
         public int MaxSpeed { get; set; }
         public int MinSpeed { get; set; }
         public int CurrentSpeed { get; set; }
+        void MoveStart();
+        void MoveStop();
         void MoveForward();
         void MoveBackward();
         void MoveRight();

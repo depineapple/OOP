@@ -34,5 +34,8 @@ namespace ConsoleApp1
         public abstract void MoveBackward();
         public abstract void MoveRight();
         public abstract void MoveLeft();
+        public abstract void MoveStart();
+        public abstract void MoveStop();
+
     }
 }
